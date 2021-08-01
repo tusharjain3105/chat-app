@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js" async></script>
+    <title>Chat App</title>
+</head>
+
+<body flex>
+    <main>
+        <header>
+            <strong sender>Sender</strong>
+        </header>
+        <div class='msgs'></div>
+        <hr>
+        <form flex class='input' onsubmit='event.preventDefault();'>
+            <input name='msg' required autocomplete="off" type="text" placeholder="Write your name...">
+            <button>></button>
+            </div>
+    </main>
+</body>
+
+</html>

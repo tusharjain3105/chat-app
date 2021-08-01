@@ -1,0 +1,8 @@
+node_modules/
+partials/
+public/
+views/
+api.js
+main.js
+mongo.js 
+user.js 

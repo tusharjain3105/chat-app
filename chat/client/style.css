@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+[flex] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    width: 40vw;
+    min-width: calc(min(500px, 100vw));
+    height: 100vh;
+    background: skyblue;
+    position: relative;
+    padding: 1rem;
+}
+
+.input {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    position: absolute;
+    bottom: 1rem;
+}
+
+.msgs div {
+    background: white;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 20px;
+    width: fit-content;
+    max-width: 80%;
+}
+
+header {
+    position: absolute;
+    height: 3rem;
+    background: navy;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: 1rem;
+    color: white;
+    text-transform: uppercase;
+}
+
+.msgs {
+    margin-top: 3rem;
+    overflow-y: scroll;
+    height: 80%;
+}
+
+.msgs .center {
+    margin: 3px auto;
+    padding: 3px 5px;
+    font-size: small;
+    background: #a0a0a0;
+}
+
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+
+/* Track */
+
+ ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+
+/* Handle */
+
+ ::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+
+/* Handle on hover */
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.msgs .right {
+    margin-left: auto;
+}
+
+.input input {
+    height: 2rem;
+    font-size: large;
+    padding: 10px;
+    width: 100%;
+    margin: 5px;
+    border-radius: 1rem;
+}
+
+.input button {
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+    font-size: xx-large;
+}
